@@ -5,7 +5,6 @@ import { NextRequest } from "next/server";
 export async function POST(request: NextRequest) {
     try {
         const res = await request.json();
-        console.log(res);
         
         const { title, content } = res;
         
